@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 })
 
 
-const port = 3030;
+const port = process.env.port || 3030;
 app.listen(port, () => {
     console.log("Server started");
 })
